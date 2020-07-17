@@ -5,7 +5,7 @@ from flask_socketio import SocketIO
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'secret!'
-app.config['DEBUG'] = False
+# app.config['DEBUG'] = False
 socketio = SocketIO(app)
 
 @app.route('/')
