@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from flask_socketio import SocketIO
-
+from eventlet import wsgi
+import eventlet
 
 app = Flask(__name__)
 
@@ -13,4 +14,4 @@ def index():
     return render_template('home.html')
 
 if __name__ == '__main__':
-    socketio.run(app,port=8000)
+    wsgi.server(eventlet.listen(('', 8000)), app)
