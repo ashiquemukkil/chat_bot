@@ -4,7 +4,7 @@ eventlet
 Flask
 Flask-Login
 Flask-Session
-Flask-SocketIO
+flask_socketio
 gevent
 greenlet
 itsdangerous
