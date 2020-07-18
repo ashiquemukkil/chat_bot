@@ -4,7 +4,7 @@ eventlet
 Flask
 Flask-Login
 Flask-Session
-flask_socketio
+Flask-SocketIO
 gevent
 greenlet
 itsdangerous
@@ -18,3 +18,4 @@ Werkzeug
 wfastcgi
 gevent-websocket
 gunicorn
+enum34
